@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetingMinute</title>
+    <link rel="icon" href="./icon/icon.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+        <div><strong>Team: Super</strong></div>
+        <div>Team Instructor: Thanh Diem Nguyen</div>
+        <div>Email: thanhdiem0512@gmail.com</div>   
+        <div>Contact: +1234566890</div>
+        <details>
+            <summary><b>Table of Content</b></summary>
+            <nav>
+                <ul>
+                    <li><a href="#Documents">Documents</a></li>
+                    <li><a href="#AttendanceList">Attendance List</a></li>
+                    <li><a href="#MeetingAgenda">Meeting Agenda</a></li>
+                    <li><a href="#Q&A">Q & A</a></li>
+                    <li><a href="#NextMeeting">Next Meeting</a></li>
+                    <li><a href="#Recording">Recording</a></li>
+                    <li><a href="#Feedback">Feedback</a></li>
+                </ul>
+            </nav>
+        </details>  
+    </header>
+    <main>
+        <h1>Project - HTML and DevTools</h1>
+        <hr>
+        <p><em>13 April, 2023 / 10:00 AM</em></p> 
+        <section>
+        <h2 id ="Documents">Documents</h2>
+        <ul>
+            <li><a href="https://www.freecodecamp.org/news/html-basics-for-beginners/">HTML Basics</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN</a></li>
+            <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a></li>
+        </ul>
+        </section>
+        <section> 
+        <h2 id="AttendanceList">Attendance List</h2>
+        <ul>
+            <li>Team Instructor: Thanh Diem Nguyen</li>
+            <li>All members of the team</li>
+        </ul>
+        </section>
+        <section>
+        <h2 id="MeetingAgenda">Meeting Agenda</h2>
+        <ul>
+            <li>Last Meeting: How to use GitHub (clone, push, add, etc.) and install extensions on VS code (Draw.io, LiveShare, Markdown All in One, CodeStream)</li>
+            <li>Project Overview: The project aims to guide beginners and intermediate users using web-based HTML and DevTools.</li>        
+            <li>Necessary Tools: Live Server helps users see how the code will be displayed on the website while coding</li>
+            <li>Discussion: A brief introduction to basic HTML and common mistakes made by users (details as in the attached document)</li>
+        </ul>
+        </section>
+        <section>
+        <h2 id="Q&A">Q & A</h2>
+        <ol>
+            <li><b>Question 1:</b> How to create an unordered list</li>
+            <p>Code - Unordered List</p> 
+            <div>
+                <img 
+                    src="https://cdn.discordapp.com/attachments/1031770132403453985/1096313664224645130/image.png"
+                    alt= "Code - Unordered List"
+                    width= "250"
+                />
+            </div>
+            <p>Product - Unordered List</p> 
+            <div>
+                <img 
+                    src="https://cdn.discordapp.com/attachments/1031770132403453985/1096313600592855050/image.png"
+                    alt= "Product - Unordered List"
+                    width= "250"
+                />
+            </div>
+            <li><b>Question 2:</b> How to add a picture</li>
+            <p>Code - Unordered List</p> 
+            <span>
+                <img 
+                    src="https://cdn.discordapp.com/attachments/1031770132403453985/1096317253596745778/image.png"
+                    alt= "Code - Unordered List"
+                    width= "250"
+                />
+            </span>
+            <p>Product - Unordered List</p> 
+            <span>
+                <img 
+                    src="https://cdn.discordapp.com/attachments/1031770132403453985/1096317345535901736/image.png"
+                    alt= "Product - Unordered List"
+                    width= "250"
+                />
+            </span>
+        </ol>
+        </section>
+        <section>
+        <h2 id="NextMeeting">Next Meeting</h2>
+        <ul>
+            <li>The next meeting will be held on <i>April 20, 2023, at 10:00 AM</i> on Zoom</li>
+            <li>Next Steps: Group division and HTML practice</li>
+        </ul>
+        </section>
+        <section>
+        <h2 id="Recording">Recording</h2>
+        <ul>
+            <li>Audio Recording</li>
+            <audio controls>
+                <source src="./Recording/HTMLMeeting.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <li>Video Recording</li>
+            <video width="320" height="240" controls>
+                <source src="./Recording/HTMLMeeting.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </ul>
+        <p><em>Meeting ended at 11:00 AM.</em></p>
+        </section>
+    </main>
+    <footer>
+        <h3 id="Feedback">Feedback</h3>
+        <!-- <form onsubmit="alert('feedback')">
+          <input type="text" placeholder="Enter any feedback" />
+          <button>Submit</button>
+        </form> -->
+
+        <form action="./feedback/submit_feedback.php" method="post">
+            <fieldset>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="understand">Understood today's lesson?</label>
+                <input list="answer-list" id="understand" name="understand" required>
+                <datalist id="answer-list">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Yes">
+                    <option value="No">
+                </datalist>
+                <br><br>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                </select>
+                <br><br>
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+                <br><br>
+                <button type="submit">Submit Feedback</button>
+            </fieldset>
+        </form>
+    </footer>
+    
+  </body>
+</html>
+
