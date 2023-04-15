@@ -48,24 +48,21 @@
         </section>
         <section>
         <h2 id="MeetingAgenda">Meeting Agenda</h2>
-        <ul>
+        <ol>
             <li>Last Meeting: How to use GitHub (clone, push, add, etc.) and install extensions on VS code (Draw.io, LiveShare, Markdown All in One, CodeStream)</li>
             <li>Project Overview: The project aims to guide beginners and intermediate users using web-based HTML and DevTools.</li>        
             <li>Necessary Tools: Live Server helps users see how the code will be displayed on the website while coding</li>
             <li>Discussion: A brief introduction to basic HTML and common mistakes made by users (details as in the attached document)</li>
-        </ul>
+        </ol>
         </section>
         <section>
         <h2 id="Q&A">Q & A</h2>
-        <ol>
-            <li><b>Question 1:</b> How to create an unordered list</li>
-            <img src="https://cdn.discordapp.com/attachments/1031770132403453985/1096313664224645130/image.png" width= "250"/>
-            <img src="https://cdn.discordapp.com/attachments/1031770132403453985/1096313600592855050/image.png" width= "250"/>
-            <li><b>Question 2:</b> How to add a picture</li>
-            <img src="https://cdn.discordapp.com/attachments/1031770132403453985/1096317253596745778/image.png" width= "250"/>
-            <img src="https://cdn.discordapp.com/attachments/1031770132403453985/1096317345535901736/image.png" width= "250"/>
-            
-        </ol>
+        <p><b>Question 1:</b> How to create an unordered list</p>
+        <img src="https://cdn.discordapp.com/attachments/1031770132403453985/1096313664224645130/image.png" width= "250"/>
+        <img src="https://cdn.discordapp.com/attachments/1031770132403453985/1096313600592855050/image.png" width= "250"/>
+        <p><b>Question 2:</b> How to add a picture</p>
+        <img src="https://cdn.discordapp.com/attachments/1031770132403453985/1096317253596745778/image.png" width= "250"/>
+        <img src="https://cdn.discordapp.com/attachments/1031770132403453985/1096317345535901736/image.png" width= "250"/>
         </section>
         <section>
         <h2 id="NextMeeting">Next Meeting</h2>
@@ -115,16 +112,17 @@
                 <label for="rating">Rating:</label>
                 <select id="rating" name="rating" required>
                     <option value="">--Please choose an option--</option>
-                    <option value="excellent">Excellent</option>
-                    <option value="good">Good</option>
-                    <option value="average">Average</option>
-                    <option value="poor">Poor</option>
+                    <option value="excellent">Excellent(5 star)</option>
+                    <option value="good">Good(4 star)</option>
+                    <option value="average">Average(3 star)</option>
+                    <option value="not good">Not good(2 star)</option>
+                    <option value="poor">Poor(1 star)</option>
                 </select>
                 <br><br>
-                <label for="comments">Additional Comments:</label>
-                <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
                 <br><br>
-                <button type="submit">Submit Feedback</button>
+                <button type="submit">Submit</button>
             </fieldset>
         </form>
     </footer>
