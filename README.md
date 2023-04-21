@@ -1,2 +1,1 @@
-# Lab 2 - Starter
-https://thanhdiemnguyen.github.io/Lab2/
+[My GitHub Pages](thanhdiemnguyen.github.io/sp23-cse110-lab3)
