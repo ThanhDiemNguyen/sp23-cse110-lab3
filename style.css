@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* ID Selector */
+#Feedback {
+    font-style: italic;    
+    font-weight: bolder;
+}
+/* Universal Selector */
+* {
+    line-height: 1.5;
+}
+
+/* Element Selector */
+body {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    background-color: rgba(255, 255, 255, 1);
+}
+p {
+    font-size: 18px;
+}
+a {
+    color: hsla(0, 0%, 50%, 1);
+    text-decoration: underline;
+}
+
+/* Attribute Selector */
+a[href="https://www.freecodecamp.org/news/html-basics-for-beginners/"] {
+    color: #EBA966;
+    text-decoration: underline;
+}
+a[href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"] {
+    color: #EBA966;
+    text-decoration: underline;
+}
+a[href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"] {
+    color: #EBA966;
+    text-decoration: underline;
+}
+
+/* Pseudo-class Selector */
+a.tableOfContent:hover {
+    color: #EBA966;
+    font-size: 22px; 
+}
+
+/* Selector List */
+h1,
+h2,
+h3 {
+    color: #393939;
+}
+
+/* Descendant Combinator */
+.question span {
+    color: #636363;
+    font-size: 18px;
+}
+
+/* Child Combinator */
+.question>.questionIdx>span {
+    color:  #393939;
+    margin-left: 20px;
+}
+
+/* General sibling combinator */
+.questionIdx~span {
+    color: #393939;
+}
+
+/* Adjacent sibling combinator */
+h2#AttendanceList+ul {
+    color:#393939;
+}
+
+/* Combining Two Selectors */
+a.backToTable {
+    text-decoration: none;
+    font-weight: bold
+}
+
+/* 
+ * Class Selector
+ * Box model - longhand 
+ * Position - relative
+ * display - inline-block
+ */
+.longhand {
+    /* Content */
+    width: 95%;                      /* Relative unit: % */
+    height: 1rem;                    /* Relative unit: rem */
+    background-color: #EBA966;
+    text-align: left;
+    line-height: 6rem;
+    display: inline-block;
+    position: relative;
+    top: auto;
+    left: auto;
+
+    /* Margin */
+    margin-top: 0.5em;              /* Relative unit: em */
+    margin-right: 0px;
+    margin-bottom: 0.5em;
+    margin-left: 0px;               /* Absolute unit: px */
+
+    /* Padding */
+    padding-top: 1in;               /* Absolute unit: in */
+    padding-right: 2%;
+    padding-bottom: 1in;
+    padding-left: 2%;
+
+    /* Border */
+    border-style: dashed;
+    border-color: #636363;
+    border-width: 0.1cm;            /* Absolute unit: cm */
+    border-radius: 0.1px;
+}
+
+/* 
+ * Box model - shorthand 
+ * display - inline
+ */
+.submit {
+    /* Content */
+    background-color: #EBA966;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline;
+
+    /* Sizing */
+    min-width: fit-content;
+    max-width: fit-content;
+
+    /* Padding */
+    padding: 10px 20px;
+
+    /* Border */
+    border: 2px solid #EBA966;
+    border-radius: 5px;
+}
+
+/* Pseudo-class */
+.submit:hover {
+    font-size: 22px;
+}
+.submit:active {
+    background-color: #393939;
+}
+
+/* Position - fixed */
+.backToTable {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #EBA966;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline;
+
+    /* Sizing */
+    min-width: fit-content;
+    max-width: fit-content;
+
+    /* Margin */
+    margin: auto;
+
+    /* Padding */
+    padding: 10px 10px;
+
+    /* Border */
+    border: 2px solid #EBA966;
+    border-radius: 5px;
+}
+
+/* 
+ * Layouts - Grid 
+ */
+.gridGal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px,1fr));
+    grid-gap: 30px;
+    padding: 20px;
+}
+
+.gridElm {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.gridElm img {
+    width: 100%;
+    height: auto;
+}
+
+.gridElm h4 {
+    margin-top: auto;
+    background-color: #EBA966;
+    color: #ffffff;
+}
+
+/*
+ * Layouts - Flexbox
+ */
+.flexbox {
+    display: flex;
+    justify-content: safe;
+    list-style-type: none;
+    padding: 0;
+}
+
+.flexbox li {
+    margin: 10px;
+}
+
+.recording p {
+    margin-left: 20px
+}
+
+.recording video,
+audio {
+    margin-left: 40px
+}
+
+/* Media Query */
+@media screen and (max-width: 500px) {
+    p {
+        font-size: 14px;
+    }
+}
