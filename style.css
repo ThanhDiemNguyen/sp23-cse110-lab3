@@ -191,7 +191,7 @@ a.backToTable {
 }
 
 .gridElm {
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
@@ -203,7 +203,6 @@ a.backToTable {
 }
 
 .gridElm h4 {
-    margin-top: auto;
     background-color: #EBA966;
     color: #ffffff;
 }
